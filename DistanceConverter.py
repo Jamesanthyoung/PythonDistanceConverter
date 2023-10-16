@@ -1,30 +1,25 @@
+#Convert Metres to Kilometres
 def metres_to_kilometres(metres):
-    """Convert Metres to Kilometres."""
     return metres / 1000
 
-
+#Convert Kilometres to Metres
 def kilometres_to_metres(kilometres):
-    """Convert Kilometres to Metres."""
     return kilometres * 1000
 
-
+#Convert Metres to Miles
 def metres_to_miles(metres):
-    """Convert Metres to Miles."""
     return metres / 1609.344
 
-
+#Convert Miles to Metres
 def miles_to_metres(miles):
-    """Convert Miles to Metres."""
     return miles * 1609.344
 
-
+#Convert Kilometres to Miles
 def kilometres_to_miles(kilometres):
-    """Convert Kilometres to Miles."""
     return kilometres / 1.609
 
-
+#Convert Miles to Kilometres
 def miles_to_kilometres(miles):
-    """Convert Miles to Kilometres."""
     return miles * 1.609
 
 
@@ -37,6 +32,7 @@ def main():
     print("5. Kilometres to Miles")
     print("6. Miles to Kilometres")
 
+    #take user input and select method depending on converstion
     choice = int(input("Enter your choice (1/2/3/4/5/6): "))
 
     if choice == 1:
@@ -72,8 +68,9 @@ def main():
         print(
             f"{distance_miles:.2f} miles is equal to {distance_kilometres:.2f} kilometres.")
     else:
+        #if the input is not an integer between 1-6 then return this message
         print("Invalid choice. Please select a valid option (1/2/3/4/5/6).")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no mutate
     main()
